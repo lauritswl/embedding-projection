@@ -174,5 +174,8 @@ cython_debug/
 .pypirc
 
 # Ignore Embeddings:
-/data/processed/
-/img/
+# Ignore everything inside data/embeddings/
+data/embeddings/*
+# But keep the directory itself
+!data/embeddings/
+
