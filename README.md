@@ -150,7 +150,7 @@ The projection of binary-classified IMDB reviews onto our Sentiment Vector shows
 ![Projection of Reviews onto Sentiment Vector](plots/IMDb_Sentiment_Distributions.png)
 
 ### 🔤 Word-Level Analysis
-To validate our approach, we projected individual words from the corpus onto the Sentiment Vector. This method, inspired by [$S^{3}$ - Semantic Signal Separation](https://arxiv.org/abs/2406.09556), reveals sentiment polarization:
+To validate our approach, we projected individual words from the corpus onto the Sentiment Vector. This method, inspired by [S3 - Semantic Signal Separation](https://arxiv.org/abs/2406.09556), reveals sentiment polarization:
 
 #### ⬆️ Highest Projection Score
 ```
