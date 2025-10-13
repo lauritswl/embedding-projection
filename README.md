@@ -12,16 +12,19 @@
 </p>
 
 ## 📋 Table of Contents
-- [Overview](#-overview)
-- [Installation](#️-installation)
-- [Usage](#-usage)
-  - [Quick Start](#-quick-start)
-  - [Reproducing Paper Results](#-reproducing-paper-results)
-- [Sanity-Check of the Sentiment Vector](#-sanity-check-of-the-sentiment-vector)
-  - [Distribution Analysis](#-distribution-analysis)
-  - [Word-Level Analysis](#-word-level-analysis)
-- [Directory Structure](#-directory-structure)
-- [License](#️-license)
+- [📋 Table of Contents](#-table-of-contents)
+- [🔍 Overview](#-overview)
+- [🛠️ Installation](#️-installation)
+- [🚀 Usage](#-usage)
+  - [⚡ Quick Start](#-quick-start)
+    - [Output Format](#output-format)
+  - [📊 Reproducing Paper Results](#-reproducing-paper-results)
+- [🧪 Sanity-Check of the Sentiment Vector](#-sanity-check-of-the-sentiment-vector)
+  - [📈 Distribution Analysis](#-distribution-analysis)
+  - [🔤 Word-Level Analysis](#-word-level-analysis)
+    - [⬆️ Highest Projection Score](#️-highest-projection-score)
+    - [⬇️ Lowest Projection Score](#️-lowest-projection-score)
+- [⚖️ License](#️-license)
 
 ## 🔍 Overview
 A project developing a technique for extracting information from contextual sentence embeddings ([model="paraphrase-multilingual-mpnet-base-v2"](https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2)) by utilizing projection of embeddings onto a [concept vector](data/concept_vectors/vectors).
@@ -166,36 +169,6 @@ bad         rotten      unacceptable stupidity   awful
 ```
 *⚠️ Note: it seems that the vector might be correlated with the romantic literature period (H.C.Andersen), i.e. "anthologies, classical, romantic". This might be a byproduct of fairytales having a high density of positive semantics, thus being overrepresented in the training set.*
 
-## 📂 Directory Structure
-```bash
-EMBEDDING-PROJECTION/
-│
-├── README.md
-├── pyproject.toml
-├── main.py
-├── quick_sentiment.py
-│
-├── src/
-│   ├── loader.py
-│   ├── embedder.py
-│   ├── projecter.py
-│   ├── pipeline.py
-│   └── plotter.py
-│
-├── data/
-│   ├── raw/
-│   │   ├── fiction4_data
-│   │   └── emobank_data
-│   ├── embeddings/
-│   │   └──gitignored_embedding_cache
-│   ├── processed/
-│   │   └──...Sentiment.csv
-│   └── concept_vectors/
-│       ├── text/
-│       └── vectors/
-│
-└── plots/
-```
 
 ## ⚖️ License
 embedding-projection is available under the MIT license. See the LICENSE file for more info.
