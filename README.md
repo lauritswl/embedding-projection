@@ -11,18 +11,6 @@
     </a>
 </p>
 
-## 📋 Table of Contents
-- [Overview](#-overview)
-- [Installation](#️-installation)
-- [Usage](#-usage)
-  - [Quick Start](#-quick-start)
-  - [Reproducing Paper Results](#-reproducing-paper-results)
-- [Sanity-Check of the Sentiment Vector](#-sanity-check-of-the-sentiment-vector)
-  - [Distribution Analysis](#-distribution-analysis)
-  - [Word-Level Analysis](#-word-level-analysis)
-- [Directory Structure](#-directory-structure)
-- [License](#️-license)
-
 ## 🔍 Overview
 A project developing a technique for extracting information from contextual sentence embeddings ([model="paraphrase-multilingual-mpnet-base-v2"](https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2)) by utilizing projection of embeddings onto a [concept vector](data/concept_vectors/vectors).
 
