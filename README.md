@@ -37,6 +37,7 @@ The main pipeline of the project is visualised below.
 ![Projection Pipeline](powerpoints/Projection_Pipeline.png)
 
 If you are instead looking for a quick implementation, please check out the SemanticProjection package: 
+
 https://github.com/lauritswl/SemanticProjection
 
 ## 🛠️ Installation
