@@ -179,3 +179,5 @@ data/embeddings/*
 # But keep the directory itself
 !data/embeddings/
 
+powerpoints/.DS_Store
+
