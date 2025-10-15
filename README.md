@@ -13,13 +13,6 @@
 
 This is a github repository for reproducing the results of
 [Continuous sentiment scores for literary and multilingual contexts](https://arxiv.org/abs/2508.14620).
-<p align="center">
-    <img src="powerpoints/concept-vectors-for-sentiment.png" alt="Projection Pipeline" width="600"/>
-</p>
-
-If you are instead looking for a quick implementation, please check out the package: 
-[SemanticProjection](https://github.com/lauritswl/SemanticProjection)
-
 
 ## 📋 Table of Contents
 - [Overview](#-overview)
@@ -34,10 +27,17 @@ If you are instead looking for a quick implementation, please check out the pack
 ## 🔍 Overview
 A project developing a technique for extracting information from contextual sentence embeddings ([model="paraphrase-multilingual-mpnet-base-v2"](https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2)) by utilizing projection of embeddings onto a [concept vector](data/concept_vectors/vectors).
 
+<p align="center">
+    <img src="powerpoints/concept-vectors-for-sentiment.png" alt="Projection Pipeline" width="600"/>
+</p>
+
 The repository contains the sentiment datasets, the functions used to embed text, define concept vectors and project new data.
 
 The main pipeline of the project is visualised below.
 ![Projection Pipeline](powerpoints/Projection_Pipeline.png)
+
+If you are instead looking for a quick implementation, please check out the SemanticProjection package: 
+https://github.com/lauritswl/SemanticProjection
 
 ## 🛠️ Installation
 1. Clone the repository and navigate to it
