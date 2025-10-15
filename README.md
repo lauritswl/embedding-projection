@@ -29,7 +29,6 @@ If you are instead looking for a quick implementation, please check out the pack
 - [Sanity-Check of the Sentiment Vector](#-sanity-check-of-the-sentiment-vector)
   - [Distribution Analysis](#-distribution-analysis)
   - [Word-Level Analysis](#-word-level-analysis)
-- [License](#️-license)
 
 
 ## 🔍 Overview
@@ -110,6 +109,3 @@ worse       terrible    sucked      horrible    worst
 bad         rotten      unacceptable stupidity   awful
 ```
 *⚠️ Note: it seems that the vector might be correlated with the romantic literature period (H.C.Andersen), i.e. "anthologies, classical, romantic". This might be a byproduct of fairytales having a high density of positive semantics, thus being overrepresented in the training set.*
-
-## ⚖️ License
-embedding-projection is available under the MIT license. See the LICENSE file for more info.
