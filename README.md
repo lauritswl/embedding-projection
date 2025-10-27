@@ -25,18 +25,19 @@ This is a github repository for reproducing the results of
 
 
 ## 🔍 Overview
-A project developing a technique for extracting information from contextual sentence embeddings ([model="paraphrase-multilingual-mpnet-base-v2"](https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2)) by utilizing projection of embeddings onto a [concept vector](data/concept_vectors/vectors).
+This repository *extracts sentiment from contextual embeddings* by using linear projection in embedding space. The repository contains the sentiment **datasets and the functions** used to embed text, define concept vectors, and project new data. 
+
+Concretly, it is a project developing a technique for extracting information from contextual sentence embeddings ([model="paraphrase-multilingual-mpnet-base-v2"](https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2)) by utilizing projection of embeddings onto a [concept vector](data/concept_vectors/vectors).
+
 
 <p align="center">
     <img src="powerpoints/concept-vectors-for-sentiment.png" alt="Projection Pipeline" width="600"/>
 </p>
 
-The repository contains the sentiment datasets, the functions used to embed text, define concept vectors and project new data.
-
-The main pipeline of the project is visualised below.
+The pipeline of the Semantic Projection algorithm is roughly visualised in the image below, and can be executed and validated by running the main.py script.
 ![Projection Pipeline](powerpoints/Projection_Pipeline.png)
 
-If you are instead looking for a quick implementation, please check out the SemanticProjection package: 
+If you are instead looking for a quick implementation of Semantic Projection, please check out the SemanticProjection package: 
 https://github.com/lauritswl/SemanticProjection
 
 ## 🛠️ Installation
